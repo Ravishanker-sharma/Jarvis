@@ -25,7 +25,7 @@ interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 
 # Gemini AI API Setup
-genai.configure(api_key="AIzaSyA-Dk7dhyut4IZHFLBTSzQcC_tAaYwYqoU")
+genai.configure(api_key="Your API")
 model = genai.GenerativeModel("gemini-1.5-flash-latest")
 chat = genai.ChatSession(model)
 command_template = f"""
